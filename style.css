@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
     color: rgb(211, 164, 11);
     background-color: rgb(255, 255, 255);
@@ -8,10 +14,79 @@ h1 {
     background-color: rgb(255, 255, 255);
     
   }
-  
-  
-
-  
-  p {
-    color: rgb(168, 76, 76);
+  footer p {
+    color: rgb(124, 40, 40);
   }
+  
+  body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+main {
+  width: 80%;
+  margin: 20px 0;
+}
+
+aside#sommaire {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+aside#sommaire h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+aside#sommaire ul {
+  list-style-type: none;
+}
+
+aside#sommaire ul li {
+  margin-bottom: 5px;
+}
+
+aside#sommaire ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+aside#sommaire ul li a:hover {
+  color: #666;
+}
